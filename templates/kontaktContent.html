@@ -1,0 +1,30 @@
+<div class="content-contact">
+    <div class="content-contact-inner">
+        <h2>Kontakt</h2>
+        <div>
+            <form action="./php/send_mail/send_mail.php" method="POST">
+                <label for="firstname">Vorname:</label>
+                <input id="firstname" name="firstname" type="text" required class>
+                <label for="name">Nachname</label>
+                <input id="name" name="name" required>
+                <label for="email">Deine E-mail:</label>
+                <input id="email" name="email" type="email" required class>
+                <label for="phone">Dein Telefon:</label>
+                <input id="phone" name="phone" type="text" required class>
+                <label for="reference">Dein Betreff:</label>
+                <input id="reference" name="reference" type="text" required class>
+                <label for="message">Deine Nachricht</label>
+                <textarea id="message" name="message" cols="30" rows="10" required class></textarea>
+
+                <button class="button-green" type="submit">Absenden</button>
+            </form>
+            <div class="three-pic-row">
+                <div class="img-container"><a href="./nils.html"><img src="./img/nils/hamburger-franzbroetchen-original.jpg" alt="Hamburger Franzbrötchen"><span>Hamburger Franzbrötchen</span></a></div>
+                <div class="img-container"><a href="./florian.html"><img src="./img/florian/sivis-semmelknoedel.jpg"
+                            alt="Bild von ein paar Semmelknödel"><span>Florians Semmelknödel</span></a></div>
+                <div class="img-container"><a href="./wolfram.html"><img src="./img/wolfram/kaesespaetzle.jpg"
+                            alt="Bild eines Topfes Käsespätzle"><span>Wolles Käsespätzle</span></a></div>
+            </div>
+        </div>
+    </div>
+</div>

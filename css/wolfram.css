@@ -1,0 +1,165 @@
+:root {
+    --contentRecipeHead: #e9e9e9;
+    --contentRecipeNumberBorder: #f1f1f1;
+    --tableOdd: #e9e9e9;
+    --tableEven: #ffffff;
+    --ListMarker: green;
+  }
+  
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+.content-recipe {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.header-recipe h1 {
+    font-size: 1.5rem;
+}
+
+.header-recipe-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.content-recipe-head, .content-recipe-head div, .inputAmountRecipeNumber {
+    display: flex;
+    align-items: center;
+}
+
+.content-recipe-head div {
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: var(--contentRecipeHead);
+}
+
+.content-recipe-head img {
+    height: 1rem;
+    margin-right: 10px;
+}
+
+.content-recipe-head span {
+    margin-right: 10px;
+}
+
+#contentRecipeNumber {
+    width: 150px;
+    font-size: 1.3rem;
+    text-align: left;
+    border: 1px solid var(--contentRecipeNumberBorder);
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 13px;
+    padding-top: 10px;
+}
+
+table.content-recipe-table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table tr:nth-child(odd), table tr:nth-child(even) {
+    height: 50px;
+}
+
+table tr:nth-child(odd), table tr.table-row-even {
+    background-color: var(--tableOdd);
+}
+
+table tr.table-row-even {
+    background-color: var(--tableEven);
+}
+
+table td:nth-child(1) {
+    /*
+    text-align: right;
+    */
+    width: 0;
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+table td:nth-child(2) {
+    width: 0;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+table { border-collapse: separate; }
+tr:first-child td:first-child { border-top-left-radius: 8px; }
+tr:first-child td:last-child { border-top-right-radius: 8px; }
+tr:last-child td:first-child { border-bottom-left-radius: 8px; }
+tr:last-child td:last-child { border-bottom-right-radius: 8px; }
+
+ol.olZubereitung li::marker {
+    color: var(--ListMarker);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.divWolfram {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.pictureWolfram {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:500px) {
+    .content-recipe-head, .content-recipe-head div, .inputAmountRecipeNumber {
+        justify-content: center;
+    }
+    .content-recipe-head span {
+        font-size: 0.8rem;
+    }
+    #contentRecipeNumber {
+        width: 80px;
+    }
+}
+
+@media (max-width:450px) {
+    .content-recipe-head div {
+        margin: 10px;
+    }
+    .content-recipe-head img {
+        margin: 5px;
+    }
+    .content-recipe-head span {
+        font-size: 0.7rem;
+        margin: 5px;
+    }
+    .content-recipe-duration, .content-recipe-brain, .content-recipe-date {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width:400px) {
+    #contentRecipeNumber {
+        width: 40px;
+    }
+}
+

@@ -1,0 +1,519 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Grüner Button - Anfang */
+
+.button-green {
+    color: white;
+    letter-spacing: 1px;
+    background-color: green;
+    padding: 16px 28px;
+    text-decoration: none;
+}
+
+.button-green:hover {
+    color: white;
+    letter-spacing: 1px;
+    background-color: green;
+    padding: 16px 28px;
+    text-decoration: none;
+    box-shadow: 0 0 1px 1px #fefefe, 1px 1px 1px 1px #010101;
+}
+
+/* Grüner Button - Ende */
+
+/* Header - Anfang */
+
+.header-body {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 17px);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;   
+    
+    width: 80vw;
+}
+
+.header .header-logo img {
+    width: 20vw;
+    margin-left: 5%;
+}
+
+.nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav a {
+    margin: 20px 20px 0px 20px;
+    text-decoration: none;
+    font-family: "Raleway";
+    color: black;
+    border-bottom: 4px solid transparent;
+    transition: all 225ms ease-in-out;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.nav a:hover {
+    border-bottom: 4px solid green;
+    transition: all 225ms ease-in-out;
+    color: green;
+}
+
+.header-body .nav button.dropDown-button-switch {
+    font-size: 2rem;
+    transform: rotate(90deg);
+    transition: all 225ms ease-in-out;
+    padding-bottom: 5px;
+}
+
+.dropping{
+    display: none;
+    position: relative;
+    transition: all 225ms ease-in-out;
+}
+
+.dropping-menu{
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
+    right: 0;
+    top: calc(100% + .5em);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: .75rem;
+    border-radius: 8px;
+    box-shadow: 10px 12px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(235, 235, 235);
+    transition: all 225ms ease-in-out;
+}
+
+.dropDown-button-close {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.opa-zero {
+    display: none !important;
+}
+.opa-one {
+    display: flex;
+}
+
+/* Header - Ende */
+
+/* erste Reihe Startseite - Anfang */
+
+.first-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 32px 10vw;
+}
+
+.first-row img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 1px 1px #fefefe, 10px 10px 8px 1px #010101;
+    transition: all 225ms ease-in-out;
+}
+
+.first-row img:hover {
+    box-shadow: 0 0 1px 1px #fefefe, 13px 13px 11px 1px #010101;
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    transition: all 225ms ease-in-out;
+}
+
+.first-row .produktinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5vw;
+}
+
+/* erste Reihe Startseite - Ende */
+
+/* zweite Reihe Startseite - Anfang */
+
+.second-row {
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+    margin-top: 50px;
+    padding: 32px 10vw;
+}
+
+.second-row h2, .third-row h2 {
+    text-align: center;
+    margin: 2.5rem;
+}
+
+/* zweite Reihe Startseite - Ende */
+
+/* dritte Reihe Startseite - Anfang */
+
+.third-row {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 10vw;
+}
+
+.third-row-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.third-row-content div {
+    margin-right: 32px;
+}
+
+.third-row-content ul {
+    padding-inline-start: 20px;
+}
+
+.third-row-content ul li::marker {
+    color: green;
+}
+
+.third-row-content img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 1px 1px #fefefe, 4px 4px 4px 1px #010101;
+    transition: all 225ms ease-in-out;
+}
+
+/* dritte Reihe Startseite - Ende */
+
+/* Footer - Anfang */
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 5px 8vw;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: calc(84vw - 17px);
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    width: 20vw;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    padding-left: 34px;
+}
+
+.footer-container-mail {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#footer-scrollup {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+}
+.footer-scrollup-arrow {
+    position: fixed;
+    width: 30px;
+    filter: invert(50%);
+    -webkit-filter: invert(50%);
+    bottom: 10px;
+    z-index: 10;
+}
+
+/* Footer - Ende */
+
+.three-pic-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
+
+.img-container {
+    margin-bottom: 16px;
+}
+
+.img-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 1px 1px #fefefe, 4px 4px 4px 1px #010101;
+}
+
+.bg-lightgrey {
+    background-color: rgba(230, 230, 230, 1);
+    padding-bottom: 75px;
+}
+
+.img-container>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.img-container a:hover {
+    color: rgba(0, 0, 0, 0.7);
+    filter: brightness(1.1);
+}
+
+/* Impressum - Anfang  */
+
+.content-impressum {
+    display: flex;
+    justify-content: center;
+}
+
+.content-inner {
+    width: 80vw;
+}
+
+/* Impressum - Ende  */
+
+/* Kontaktformular - Anfang */
+
+.content-contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.content-contact-inner {
+    width: 80vw;
+}
+
+.content-contact-inner div {
+    display: flex;
+}
+
+.content-contact div.three-pic-row {
+    width: unset !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 32px;
+}
+
+form label {
+    margin-bottom: 8px;
+}
+
+form input {
+    height: 45px;
+}
+
+form input, form textarea {
+    margin-bottom: 32px;
+    border-radius: 8px;
+    border: 1px solid #515151;
+}
+
+form input:focus, form input:hover, form textarea:focus, form textarea:hover {
+    box-shadow: 0 0 8px 1px #0b520f;
+    border: 1px solid transparent;
+}
+
+.success-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-crossline {
+    text-decoration: line-through;
+}
+
+
+
+/* Kontaktformular - Ende */
+
+/* Media-Querys - Anfang */
+
+@media(max-width: 1118px) {
+    .header-body #nav-links {
+        display: none;
+    }
+    .nav {
+        align-items: center;
+    }
+    .header-body .nav-links {
+        display: none;
+        transition: all 225ms ease-in-out;
+    }
+    .header{
+        align-items: center;
+    }
+
+    .dropping{
+        display: unset;
+        transition: all 225ms ease-in-out;
+    }
+}
+
+@media(max-width: 1000px) {
+    .header .hide-mobile {
+        display: none;
+        transition: all 225ms ease-in-out;
+    }
+    .img-container img {
+        width: 180px;
+        height: 180px;
+        transition: all 225ms ease-in-out;
+    }
+    .footer-logo{
+        padding-left: 20px;
+    }
+}
+
+@media(max-width: 780px) {
+    .first-row img {
+        width: 250px;
+        transition: all 225ms ease-in-out;
+    }
+    .img-container img {
+        width: 130px;
+        height: 130px;
+        transition: all 225ms ease-in-out;
+    }
+    .footer-scrollup-arrowfooter-scrollup-arrow{
+        bottom: 75px;
+    }
+}
+
+@media(max-width: 680px) {
+    .header .header-logo img {
+        width: 30vw;
+        transition: all 225ms ease-in-out;
+    }
+    .dropping-menu{
+        width: 60vw;
+        height: unset;
+        font-size: .8rem;
+    }
+
+    .dropDown-button-close {
+        font-size: 1.2rem;
+        margin-top: 2.5rem;
+    
+    }
+        
+    .first-row {
+        flex-direction: column;
+        transition: all 225ms ease-in-out;
+    }
+    .first-row .produktinfo {
+        align-items: center;
+        text-align: justify;
+    }
+    .first-row img {
+        width: 250px;
+        transition: all 225ms ease-in-out;
+    }
+    .second-row {
+        padding: 10px 10vw;
+    }
+    .second-row h2 {
+        margin: 0.83em;
+    }
+    .three-pic-row {
+        flex-direction: column;
+        transition: all 225ms ease-in-out;
+    }
+    .content-contact div.three-pic-row {
+        display: none;
+    }
+    .img-container {
+        margin-bottom: 32px;
+        transition: all 225ms ease-in-out;
+    }
+    .img-container img {
+        width: 250px;
+        height: 250px;
+        transition: all 225ms ease-in-out;
+    }
+    .third-row {
+        text-align: justify;
+        padding: 0 10vw;
+        padding-bottom: 8px;
+    }
+    .third-row-content {
+        flex-direction: column-reverse;
+        justify-content: unset;
+        align-items: center;
+    }
+    .third-row-content div {
+        margin: unset;
+    }
+    .nav-footer{
+        display: flex;
+    }
+    .footer-container {
+        padding: 5px 20px;
+        width: unset;
+    }
+    .footer-container a {
+        font-size: 0.6rem;
+    }
+    .footer-scrollup-arrow{
+        bottom: 55px;
+    }
+}
+
+@media (max-width:400px) {
+    .footer-scrollup-arrow{
+        bottom: 40px;
+    }
+
+    .footer-logo{
+        padding-left: 10px;
+    }
+}
